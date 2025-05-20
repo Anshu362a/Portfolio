@@ -1,0 +1,43 @@
+.resume-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.resume-header h1 {
+  color: #ff7700;
+  font-size: 3rem;
+  margin: 0;
+}
+
+.btn-download {
+  padding: 0.6rem 1.5rem;
+  border: 2px solid #ff7700;
+  background-color: transparent;
+  color: #ff7700;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-download:hover {
+  background-color: #ff7700;
+  color: #000;
+  transform: scale(1.05);
+}
+
+
+.project-link {
+  color: #ff7700;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.project-link:hover {
+  color: #ffa94d; /* lighter orange */
+  text-decoration: underline;
+}

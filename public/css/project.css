@@ -26,6 +26,16 @@
   transition: transform 0.3s ease;
 }
 
+.project-card a.btn-glow {
+  margin-top: auto;
+  align-self: center;
+}
+/* .project-card a.btn-glow {
+  display: inline-block;
+  text-align: center;
+  margin-top: 0.5rem;
+} */
+
 .project-card:hover {
   transform: translateY(-8px);
 }
@@ -40,12 +50,6 @@
   padding-left: 1.2rem;
   list-style: disc;
   margin-bottom: 1rem;
-}
-
-.project-card a.btn-glow {
-  display: inline-block;
-  text-align: center;
-  margin-top: 0.5rem;
 }
 
 .download-resume {

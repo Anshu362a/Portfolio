@@ -21,13 +21,35 @@ body{
     font-weight: 600;
 }
 
+.logo-circle {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #ffffff; /* Or your theme background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
 
+.logo-circle:hover {
+  transform: scale(1.05);
+}
 
-/* .navbar-brand{
-    color: #ff2770;
-    font-size: 2rem;
-    font-weight: 900;
-} */
+.logo-circle img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
  
 
 .nav-link {

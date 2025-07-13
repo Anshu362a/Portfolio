@@ -1,5 +1,5 @@
  const nameEl = document.getElementById('name');
-  const names = ['Anshu Yadav', 'A Developer', 'A Problem Solver', 'A CSE Student'];
+  const names = ['Web Developer','Mern Stack Developer', 'A Problem Solver'];
   let index = 0;
   let charIndex = 0;
   let typing = true;

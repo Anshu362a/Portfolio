@@ -32,14 +32,30 @@ p a:hover{
   padding-right: 2rem;
 }
 
-.hero-right {
+.hero-left h1 {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 4rem;
+}
+
+.hero-left p {
+  font-size: 18px;
+  color: #64ffda;
+}
+
+.name{
+  color: #ff7700;
+}
+
+.hero-img {
+  width: 250px;
+  max-width: 70%;
   flex: 1;
   display: flex;
   justify-content: flex-end; /* Force it to right */
   align-items: center;
+  animation: float 3s ease-in-out infinite;
 }
-
-
 
 
 @keyframes float {
@@ -82,14 +98,6 @@ p a:hover{
   transform: scale(1.05);
 }
 
-.hero-img {
-  width: 300px;
-  max-width: 100%;
-  border-radius: 50%;
-  box-shadow: 0 0 15px #ff7700;
-  animation: float 3s ease-in-out infinite;
-}
-
 .info-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -113,4 +121,24 @@ p a:hover{
   0% { transform: translateY(0); }
   50% { transform: translateY(-10px); }
   100% { transform: translateY(0); }
+}
+
+
+.wave {
+  font-size: 3rem;
+  display: inline-block;
+  animation: wave-animation 2s infinite;
+  transform-origin: 70% 70%; /* makes the wave pivot from the wrist */
+}
+
+/* Keyframes for waving effect */
+@keyframes wave-animation {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(14deg); }
+  20% { transform: rotate(-8deg); }
+  30% { transform: rotate(14deg); }
+  40% { transform: rotate(-4deg); }
+  50% { transform: rotate(10deg); }
+  60% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
 }
